@@ -1,0 +1,8 @@
+<?php
+require 'vendor/autoload.php';
+
+$mongoClient = new MongoDB\Client("mongodb://localhost:27017");
+$db = $mongoClient->{"todo_list"};
+$usersCollection = $db->users;
+$tasksCollection = $db->tasks;
+?>
